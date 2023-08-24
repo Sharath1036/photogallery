@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<head>
+    <title>Photo Gallery</title>
+    <link rel="icon" type="image/x-icon" href="./images/camera.png">
+    <meta charset="UTF-8">
+    <meta name="description" content="A photo gallery which contains thumbnail of Patkar College Tie Day.">
+    <meta name="author" content="Sharath Pai">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            background: rgb(48, 47, 47);
+            text-align: center;
+        }
+
+        h1 {
+            color: white;
+        }
+
+        .thumbnail img{
+            height: 200px;
+            width: 300px;
+            object-fit: cover;
+            margin: 10px;
+            border: 5px solid white;
+        }
+
+        .preview img {
+            height: 700px;
+            width: 80%;
+            border: 15px solid white;
+            object-fit: cover;
+        }
+
+        /* Media query for mobiles, low resolution devices */
+        @media (min-width: 0px) and (max-width: 767px) {
+            .preview img {
+            height: 400px;
+            width: 90%;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1 align="center">Patkar College Tie Day</h1>
+    <br/>
+
+    <div class="thumbnail">
+        <img onmouseover="preview.src=photo1.src" name="photo1" src="./images/photo1.jpg" />
+        <img onmouseover="preview.src=photo2.src" name="photo2" src="./images/photo2.jpg" />
+        <img onmouseover="preview.src=photo3.src" name="photo3" src="./images/photo3.jpg" />
+        <img onmouseover="preview.src=photo4.src" name="photo4" src="./images/photo4.jpg" />
+        <img onmouseover="preview.src=photo5.src" name="photo5" src="./images/photo5.jpg" />
+        <img onmouseover="preview.src=photo6.src" name="photo6" src="./images/photo6.jpg" />
+        <img onmouseover="preview.src=photo7.src" name="photo7" src="./images/photo7.jpg" />
+        <img onmouseover="preview.src=photo8.src" name="photo8" src="./images/photo8.jpg" />
+        <img onmouseover="preview.src=photo9.src" name="photo9" src="./images/photo9.jpg" />
+        <img onmouseover="preview.src=photo10.src" name="photo10" src="./images/photo10.jpg" />
+        <img onmouseover="preview.src=photo11.src" name="photo11" src="./images/photo11.jpg" />
+        <img onmouseover="preview.src=photo12.src" name="photo12" src="./images/photo12.jpg" />
+    </div>
+
+    <br/><br/><br/><br/>
+    <div class="preview">
+        <img name="preview" src="./images/photo1.jpg" />
+    </div>
+</body>
