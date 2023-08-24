@@ -6,46 +6,13 @@
     <meta name="description" content="A photo gallery which contains thumbnail of Patkar College Tie Day.">
     <meta name="author" content="Sharath Pai">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <style>
-        body {
-            background: rgb(48, 47, 47);
-            text-align: center;
-        }
-
-        h1 {
-            color: white;
-        }
-
-        .thumbnail img{
-            height: 200px;
-            width: 300px;
-            object-fit: cover;
-            margin: 10px;
-            border: 5px solid white;
-        }
-
-        .preview img {
-            height: 700px;
-            width: 80%;
-            border: 15px solid white;
-            object-fit: cover;
-        }
-
-        /* Media query for mobiles, low resolution devices */
-        @media (min-width: 0px) and (max-width: 767px) {
-            .preview img {
-            height: 400px;
-            width: 90%;
-            }
-        }
-
-    </style>
+    <link rel="stylesheet" href="style.css"
 </head>
 
 <body>
     <h1 align="center">Patkar College Tie Day</h1>
-    <br/>
+
+    <br/><br/>
 
     <div class="thumbnail">
         <img onmouseover="preview.src=photo1.src" name="photo1" src="./images/photo1.jpg" />
@@ -63,6 +30,7 @@
     </div>
 
     <br/><br/><br/><br/>
+
     <div class="preview">
         <img name="preview" src="./images/photo1.jpg" />
     </div>
